@@ -1,0 +1,233 @@
+.wrapper__container {
+    background-color: #9789f9;
+    width: 1415px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.container__box {
+    width: 1200px;
+    height: 900px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.box {
+    width: 330px;
+    padding-top: 150px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 750px;
+}
+
+.box__header {
+    height: 220px;
+    background-color: #f5f4f9;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.box__header-text {
+    font-size: 3.756em;
+    font-family: 'BebasNeue';
+    font-weight: 100;
+}
+
+.box__header-text::before {
+    content: '\0024';
+    font-size: 0.4em;
+    vertical-align: 85%;
+}
+
+.box__header-text::after {
+    content: '/hr';
+    font-size: 0.31em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.box__header-title {
+    font-family: 'BebasNeue';
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 2px
+}
+
+.box__main {
+    height: 365px;
+    background-color: #ffffff;
+    border-top-left-radius: 500px 410px;
+    border-top-right-radius: 500px 410px;
+    margin-top: -90px;
+    width: 400px;
+    margin-left: -35px;
+}
+
+.box__main__wrapper {
+    text-align: center;
+}
+
+.box__main-icon {
+    padding-top: 30px;
+}
+
+.box__main-list {
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+.list {
+    text-align: left;
+    padding-top: 30px;
+    margin-left: 150px;
+}
+
+.box__main-list-modify .list {
+    margin-left: 130px;
+}
+
+.box__footer {
+    height: 60px;
+    background-color: #f5f4f9;
+    position: relative;
+}
+
+.box__footer-btn {
+    background-color: #6fcffb;
+    padding: 15px 45px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    border-radius: 50px;
+    top: 35px;
+    left: 65px;
+    font-family: 'BebasNeue';
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    position: absolute;
+    width: 205px;
+    height: 55px;
+}
+
+.box__footer-text {
+    font-size: 0.9em;
+    color: rgb(169, 169, 169);
+    line-height: 4.818;
+    text-align: center;
+    display: none;
+    font-family: 'Roboto';
+}
+
+.circle__small {
+    width: 4px;
+    height: 4px;
+    background-color: #fd8d7b;
+    position: absolute;
+    border-radius: 50%;
+    right: 5px;
+    top: 155px;
+}
+
+.circle__medium {
+    width: 10px;
+    height: 10px;
+    background-color: #fd8d7b;
+    position: absolute;
+    border-radius: 50%;
+    right: 10px;
+    top: 160px;
+}
+
+.circle__large {
+    width: 40px;
+    height: 40px;
+    background-color: #fd8d7b;
+    position: absolute;
+    border-radius: 50%;
+    right: 13px;
+    top: 165px;
+}
+
+.circle__large-text {
+    text-align: center;
+    font-family: 'BebasNeue';
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #ffffff;
+    padding-top: 9px;
+    padding-left: 3px;
+}
+
+.box__label {
+    width: 100px;
+    height: 30px;
+    background-color: #3b4040;
+    position: absolute;
+    right: -92px;
+    top: 170px;
+    z-index: 8;
+    border-radius: 36% 28% 28% 36% / 100% 100% 100% 100%
+}
+
+.box__label::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 11px solid #3b4040;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+
+.box__label-text {
+    color: #ffffff;
+    font-family: 'BebasNeue';
+    font-weight: 700;
+    text-align: center;
+    padding-top: 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85em;
+}
+
+.wrapper_box {
+    width: 330px;
+    height: 500px;
+    position: relative;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    transition: .9s ease;
+}
+
+.box:hover .box__footer-btn {
+    background-color: #fd8d7b;
+    top: -35px;
+    transition: .9s ease;
+}
+
+.box:hover .box__footer-text {
+    display: initial;
+    padding-left: 75px;
+    transition: .9s ease;
+
+}
+
+.wrapper_box:hover .box__label {
+    right: -124px;
+    top: 130px;
+    transition: .9s ease;
+}
+
+.box-3__modify:hover {
+    transform: scale(1.2);
+    transition: .9s ease;
+    z-index: 35;
+}
